@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Smart Farm Market</h1>
+
+<h2>Admin Login</h2>
+
+</header>
+
+<div class="admin-box">
+
+<input type="text"
+id="username"
+placeholder="Username">
+
+<input type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="login()">
+Login
+</button>
+
+<p id="message"></p>
+
+</div>
+
+<div id="dashboard"
+style="display:none;">
+
+<h2>Admin Dashboard</h2>
+
+<h3>Products</h3>
+
+<table>
+
+<tr>
+<th>Product</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Maize</td>
+<td>Tsh 1,200</td>
+</tr>
+
+<tr>
+<td>Rice</td>
+<td>Tsh 2,500</td>
+</tr>
+
+<tr>
+<td>Beans</td>
+<td>Tsh 3,000</td>
+</tr>
+
+<tr>
+<td>Potatoes</td>
+<td>Tsh 1,500</td>
+</tr>
+
+</table>
+
+<h3>Orders Received</h3>
+
+<ul>
+
+<li>John - 10 Kg Maize</li>
+
+<li>Mary - 5 Kg Rice</li>
+
+<li>Peter - 8 Kg Beans</li>
+
+</ul>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

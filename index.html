@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm Market</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SMART FARM MARKET</h1>
+        <p>Fresh Agricultural Products from the great company</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <section id="home" class="hero">
+
+        <h2>Welcome to Smart Farm Market</h2>
+
+        <p>
+            Buy fresh farm products directly from farmers.
+            Fast, simple and affordable.
+        </p>
+
+        <button id="welcomeBtn">
+            Learn More
+        </button>
+
+    </section>
+
+    <section id="products">
+
+        <h2>Available Products</h2>
+
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Price (Tsh/Kg)</th>
+            </tr>
+
+            <tr>
+                <td>Maize</td>
+                <td>1200</td>
+            </tr>
+
+            <tr>
+                <td>Rice</td>
+                <td>2500</td>
+            </tr>
+
+            <tr>
+                <td>Beans</td>
+                <td>3000</td>
+            </tr>
+
+            <tr>
+                <td>Potatoes</td>
+                <td>1500</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section id="order">
+
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm">
+
+            <label>Customer Name</label>
+
+            <input type="text"
+                   id="customerName"
+                   placeholder="Enter your full name">
+
+            <label>Phone Number</label>
+
+            <input type="text"
+                   id="phoneNumber"
+                   placeholder="07XXXXXXXX">
+
+            <label>Select Product</label>
+
+            <select id="product">
+
+                <option value="1200">Maize</option>
+                <option value="2500">Rice</option>
+                <option value="3000">Beans</option>
+                <option value="1500">Potatoes</option>
+
+            </select>
+
+            <label>Quantity (Kg)</label>
+
+            <input type="number"
+                   id="quantity"
+                   placeholder="Enter quantity">
+
+            <button type="button"
+                    onclick="calculateTotal()">
+
+                Calculate Total
+
+            </button>
+
+            <h3 id="totalPrice">
+                Total Cost: Tsh 0
+            </h3>
+
+            <button type="submit">
+                Submit Order
+            </button>
+
+        </form>
+
+        <p id="error"></p>
+
+    </section>
+
+    <section>
+
+        <h2>Order Receipt</h2>
+
+        <div id="receiptArea"></div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact Information</h2>
+
+        <p>Email: smartfarm@gmail.com</p>
+
+        <p>Phone: +255 758478692</p>
+
+        <p>Location: Morogoro, Tanzania</p>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Smart Farm Market.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
